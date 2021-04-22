@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Вход
+{% endblock %}
+
+{% block body %}
+<body class="text-center">
+    
+<main class="form-signin">
+  <form>
+    <img class="mb-4" src="https://o.remove.bg/downloads/021fac0d-207c-4b2a-8cfa-b4dc33886132/png-transparent-silhouette-wake-up-silhouette-angle-animals-sleep-thumbnail-removebg-preview.png" alt="" width="75" height="70">
+    <h1 class="h3 mb-3 fw-normal">Вход</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingInput" name="name" placeholder="IvanIvanov2020">
+      <label for="floatingInput">Почта</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+      <label for="floatingPassword">Пароль</label>
+    </div>
+    <a class="w-100 btn btn-lg btn-primary" href='/wakeup'>Вход</a>
+    <nav class='my-2 my-md-2 mr-md-0'>
+        <a class='p-4 text-dark' href='/registration'>Регистрация</a>
+    </nav>
+  </form>
+</main>
+
+
+  
+</body>
+{% endblock %}

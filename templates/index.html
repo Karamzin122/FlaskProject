@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+<div class="p-5 mb-4 bg-light rounded-3">
+	<div class="col-md-6">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Сон</h1>
+        <p>Хороший сон - необходимое условей здорового образа жизни, но правильно ли вы спите?
+        Если при пробуждении вы испытываете слабость, апатию и т.п. то скорее всего нет. Мы попробуем решить вашу проблему.
+    Основываясь на циклах сна, мы подберём для вас оптимальное время пробуждения.</p>
+        <a class="btn btn-primary btn-lg" type="button" href="/reg">Попробывать</a>
+      </div>
+    </div>
+    <div>
+      	<img class="mb-4" src="https://99px.ru/sstorage/86/2018/06/image_860506180008576005737.gif" alt="" width="300" height="300" style="float: right;">
+    </div>
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>Проблемы со сном?</h2>
+          <p>Мы собрали для вас список возможных причин проблем со сном.</p>
+          <a class="btn btn-outline-light" href="/info">Подробнее</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Регистрация</h2>
+          <p>Зарегистрируйтесь и получите доступ к возможности установить оптимальное время пробуждения.</p>
+          <a class="btn btn-outline-primary" href="/registration">Регистрация</a>
+        </div>
+      </div>
+    </div>
+{% endblock %}

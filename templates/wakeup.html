@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Оптимизация сна
+{% endblock %}
+
+{% block body %}
+<body class="text-center">
+    
+<main class="form-signin">
+  <form method="post">
+    <img class="mb-4" src="https://o.remove.bg/downloads/021fac0d-207c-4b2a-8cfa-b4dc33886132/png-transparent-silhouette-wake-up-silhouette-angle-animals-sleep-thumbnail-removebg-preview.png" alt="" width="75" height="70">
+    <h1 class="h3 mb-3 fw-normal">Оптимизация сна</h1>
+
+    <div class="form-floating">
+      <label for="floatingInput">Когда вы планируете заснуть?</label>
+      <input type="text" name="sleep" placeholder="23:00">
+    </div>
+    <div class="form-floating">
+      <label for="floatingPassword">Когда вы планируете проснуться?</label>
+      <input type="text" name="wakeup" placeholder="8:00">
+    </div>
+    <button class="w-50 btn btn-lg btn-primary" type="submit">Оптимальное время пробуждения</button>
+    <h2>{{ (time) }}</h2>
+  </form>
+</main>
+
+
+    
+  
+
+</body>
+{% endblock %}
